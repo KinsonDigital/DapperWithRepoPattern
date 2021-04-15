@@ -1,27 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Dapper;
-using DapperWithRepoPattern.Data.Models;
+﻿using DapperWithRepoPattern.Data.Models;
 using DapperWithRepoPattern.Data.Repositories;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace DapperWithRepoPattern
 {
-    /*Links
-     Below are all dapper related libraries to do everything from standard Dapper operations, to inserts and deletes,
-     as well as batch operations on inserts and deletes for performance reasons.
-
-        1. http://dapper-tutorial.net/
-        2. http://dapper-tutorial.net/dapper-contrib
-        3. http://dapper-tutorial.net/dapper-plus
-     */
-
-    public class Program
+    class Program
     {
-        private static string _connectionString = @"";
+        private static string _connectionString = @"Server=localhost;Database=master;Trusted_Connection=True;";
 
 
         static void Main(string[] args)
@@ -50,7 +37,7 @@ namespace DapperWithRepoPattern
             //});
 
 
-            var result = personRepo.GetAllWhere((person) => person.FirstName == "Mighty" );
+            var result = personRepo.GetAllWhere((person) => person.FirstName == "Mighty");
 
             var peopleInThirties = personRepo.GetPeopleInThirtySomething();
 
@@ -93,23 +80,6 @@ namespace DapperWithRepoPattern
             }
 
             return people;
-        }
-
-
-        /// <summary>
-        /// This gets data from the database only using Dapper.
-        /// </summary>
-        static void JustDapper()
-        {
-            var connection = new SqlConnection(_connectionString);
-
-            var sql = "SELECT * FROM Person";
-
-            var allPeople = connection.Query<Person>(sql);
-
-            Console.WriteLine($"Total People: {allPeople.Count()}");
-
-            Console.ReadKey();
         }
     }
 }

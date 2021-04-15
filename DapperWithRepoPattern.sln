@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2042
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperWithRepoPattern", "DapperWithRepoPattern\DapperWithRepoPattern.csproj", "{106F0EA6-4992-4BE1-818B-6762CEFBCC4B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperWithRepoPattern", "DapperWithRepoPattern\DapperWithRepoPattern.csproj", "{81538B4F-301A-4421-B0AE-197AFBFB56D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{106F0EA6-4992-4BE1-818B-6762CEFBCC4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{106F0EA6-4992-4BE1-818B-6762CEFBCC4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{106F0EA6-4992-4BE1-818B-6762CEFBCC4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{106F0EA6-4992-4BE1-818B-6762CEFBCC4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81538B4F-301A-4421-B0AE-197AFBFB56D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81538B4F-301A-4421-B0AE-197AFBFB56D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81538B4F-301A-4421-B0AE-197AFBFB56D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81538B4F-301A-4421-B0AE-197AFBFB56D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {693E3D98-259C-4D26-9BC1-E757E5682D0B}
+		SolutionGuid = {D41925B2-D7DE-4969-B2B3-783301DAECF5}
 	EndGlobalSection
 EndGlobal

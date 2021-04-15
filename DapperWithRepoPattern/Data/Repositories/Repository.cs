@@ -1,14 +1,8 @@
 ﻿using Dapper;
 using Dapper.Contrib.Extensions;
-
-using DapperWithRepoPattern.Data.Models;
 using DapperWithRepoPattern.Data.Repositories.Core;
 using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DapperWithRepoPattern.Data.Repositories
 {

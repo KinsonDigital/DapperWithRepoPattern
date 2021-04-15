@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Dapper;
-using Dapper.Contrib.Extensions;
 using DapperWithRepoPattern.Data.Models;
 
 namespace DapperWithRepoPattern.Data.Repositories
